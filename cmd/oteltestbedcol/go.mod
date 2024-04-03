@@ -340,6 +340,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/attr
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver => ../../receiver/carbonreceiver
 
+replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/ciliumhubblereceiver => ../../receiver/ciliumhubblereceiver
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../exporter/splunkhecexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/syslogexporter => ../../exporter/syslogexporter

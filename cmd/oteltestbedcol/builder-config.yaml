@@ -34,6 +34,7 @@ processors:
 receivers:
   - gomod: go.opentelemetry.io/collector/receiver/otlpreceiver v0.99.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver v0.99.0
+  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/ciliumhubblereceiver v0.99.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver v0.99.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver v0.99.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.99.0
@@ -71,6 +72,7 @@ replaces:
   - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
   - github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor => ../../processor/attributesprocessor
   - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver => ../../receiver/carbonreceiver
+  - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/ciliumhubblereceiver => ../../receiver/ciliumhubblereceiver
   - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../exporter/splunkhecexporter
   - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/syslogexporter => ../../exporter/syslogexporter
   - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter => ../../exporter/prometheusexporter

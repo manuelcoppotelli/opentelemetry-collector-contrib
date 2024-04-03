@@ -191,6 +191,7 @@ module-sets:
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudfoundryreceiver
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver
+      - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/ciliumhubblereceiver
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/collectdreceiver
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/couchdbreceiver
       - github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver

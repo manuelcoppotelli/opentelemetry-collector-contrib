@@ -32,6 +32,7 @@ import (
 	attributesprocessor "github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor"
 	resourceprocessor "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourceprocessor"
 	carbonreceiver "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver"
+	ciliumhubblereceiver "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/ciliumhubblereceiver"
 	filelogreceiver "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver"
 	fluentforwardreceiver "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver"
 	jaegerreceiver "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver"
@@ -63,6 +64,7 @@ func components() (otelcol.Factories, error) {
 	factories.Receivers, err = receiver.MakeFactoryMap(
 		otlpreceiver.NewFactory(),
 		carbonreceiver.NewFactory(),
+		ciliumhubblereceiver.NewFactory(),
 		filelogreceiver.NewFactory(),
 		fluentforwardreceiver.NewFactory(),
 		jaegerreceiver.NewFactory(),

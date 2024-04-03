@@ -1,0 +1,13 @@
+type: ciliumhubble
+scope_name: otelcol/ciliumhubblereceiver
+
+status:
+  class: receiver
+  stability:
+    alpha: [traces]
+  distributions: [contrib]
+  codeowners:
+    active: [manuelcoppotelli]
+
+tests:
+  config:

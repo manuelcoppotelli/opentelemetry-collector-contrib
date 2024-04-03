@@ -188,6 +188,7 @@ body:
       - receiver/bigip
       - receiver/carbon
       - receiver/chrony
+      - receiver/ciliumhubble
       - receiver/cloudflare
       - receiver/cloudfoundry
       - receiver/collectd
