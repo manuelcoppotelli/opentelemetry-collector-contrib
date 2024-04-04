@@ -1,0 +1,21 @@
+ciliumhubble:
+ciliumhubble/1:
+  endpoint: unix:///var/run/cilium/hubble.sock
+  flow_encoding_options:
+    traces:
+      encoding: ""
+ciliumhubble/2:
+  endpoint: unix:///var/run/cilium/hubble.sock
+  tls:
+    ca_file: ../testdata/certs/ca.pem
+    cert_file: ../testdata/certs/test-client.pem
+    key_file: ../testdata/certs/test-client-key.pem
+  trace_cache_window: 1h
+  parse_trace_headers: false
+  flow_encoding_options:
+    traces:
+      encoding: "JSON"
+      top_level_keys: false
+      labels_as_maps: true
+  include_flow_types:
+    traces: ["l7"]
